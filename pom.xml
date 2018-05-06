@@ -103,8 +103,8 @@
 
         <profile.name>oss</profile.name>
         <!-- for maven compiler plugin -->
-        <java_source_version>1.6</java_source_version>
-        <java_target_version>1.6</java_target_version>
+        <java_source_version>1.8</java_source_version>
+        <java_target_version>1.8</java_target_version>
         <file_encoding>UTF-8</file_encoding>
         <!-- Maven plugins -->
         <maven_jar_version>3.0.2</maven_jar_version>
@@ -234,7 +234,7 @@
             </activation>
             <build>
                 <plugins>
-                    <plugin>
+<!--                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-checkstyle-plugin</artifactId>
                         <executions>
@@ -255,7 +255,7 @@
                                 </goals>
                             </execution>
                         </executions>
-                    </plugin>
+                    </plugin> -->
                 </plugins>
             </build>
         </profile>
@@ -581,7 +581,7 @@
                     <artifactId>maven-jetty-plugin</artifactId>
                     <version>${maven_jetty_version}</version>
                 </plugin>
-                <plugin>
+<!--                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
                     <version>${maven_checkstyle_version}</version>
@@ -592,7 +592,7 @@
                             <version>8.9</version>
                         </dependency>
                     </dependencies>
-                </plugin>
+                </plugin> -->
             </plugins>
         </pluginManagement>
     </build>
